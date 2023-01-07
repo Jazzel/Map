@@ -1,0 +1,580 @@
+﻿input#Name {
+  width: 325px;
+}
+.rental_map .tf2 {
+  width: 425px !important;
+}
+.rental_map .popup_full {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  z-index: 5;
+  top: 80px;
+  left: 80px;
+  display: none;
+}
+.rental_map #popup {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  border-color: gray;
+}
+.uploaded_map img {
+  float: left;
+}
+.uploaded_map .choose_file {
+  margin: 0;
+  height: 40px;
+  position: relative;
+  clear: left;
+}
+.uploaded_map .choose_file input {
+  bottom: 0px;
+  position: absolute;
+}
+.ui-widget-overlay {
+  background: repeat-x scroll 50% 50% #aaa;
+  opacity: 0.7;
+}
+.ui-widget-overlay {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.index {
+  position: relative;
+}
+.index img {
+  margin-bottom: 20px;
+}
+.liveOuterBox img {
+  margin-bottom: 0px;
+}
+.transparent-png.sample {
+  background: url(/ResNexus/resnexus/img/IMU-logo-ptw.png) no-repeat left top;
+  height: 385px;
+  width: 400px;
+}
+.littleBox {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: 0px;
+  margin-left: -15px;
+  top: 0;
+  background: transparent url(/resnexus/img/map-icons.png) -3px -34px no-repeat;
+  cursor: pointer;
+}
+.littleInfoBox {
+  height: 25px;
+  width: 27px;
+  background: transparent url(/resnexus/img/Map-Builder-Icons.png) -80px -85px
+    no-repeat;
+  cursor: pointer;
+}
+.littleCloneBox {
+  font-size: 8px;
+  color: #000;
+  width: 30px;
+  height: 25px;
+  background: transparent url(/resnexus/img/Map-Builder-Icons.png) -138px -85px
+    no-repeat;
+  cursor: pointer;
+}
+.littleRemoveBox {
+  font-size: 8px;
+  color: #000;
+  width: 29px;
+  height: 25px;
+  background: transparent url(/resnexus/img/Map-Builder-Icons.png) -51px -86px
+    no-repeat;
+  cursor: pointer;
+}
+.outerBox {
+  position: absolute;
+  height: 25px;
+  cursor: move;
+  left: 30px;
+}
+.outerBox.selected {
+  z-index: 5;
+}
+.outerBox .ui-wrapper {
+  opacity: 0.6;
+}
+.outerBox.selected .ui-wrapper {
+  opacity: 1;
+}
+.liveOuterBox {
+  position: absolute;
+  cursor: pointer;
+  height: 25px;
+  opacity: 0.7;
+}
+.liveOuterBox.over {
+  opacity: 0.9;
+}
+.liveOuterBox .availability {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.outerBox.selected .littleBox {
+  height: 25px;
+  width: 25px;
+  left: 0px;
+  margin-left: -24px;
+  top: 0;
+  margin-top: -2px;
+  background: transparent url(/resnexus/img/Map-Builder-Icons.png) -110px -183px
+    no-repeat;
+  cursor: pointer;
+  opacity: 1;
+}
+.outerBox .topSliderContainer {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 20px;
+  display: none;
+  margin-top: -40px;
+}
+.outerBox .bottomSliderContainer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 20px;
+  display: none;
+}
+.outerBox .nameContainer {
+  position: absolute;
+  top: 0px;
+  margin-top: -80px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  height: 20px;
+  min-width: 80px;
+  display: none;
+}
+.outerBox.selected .littleInfoBox {
+  display: block;
+}
+.outerBox.selected .littleCloneBox {
+  display: block;
+}
+.outerBox.selected .littleRemoveBox {
+  display: block;
+}
+.outerBox.selected .topSliderContainer {
+  display: block;
+}
+.outerBox.selected .bottomSliderContainer {
+  display: block;
+}
+.outerBox.selected .nameContainer {
+  display: block;
+}
+.outerBoxHover {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.9;
+  display: none;
+  z-index: -1;
+}
+.number {
+  height: 30px;
+  width: 30px;
+  left: 0px;
+  top: 0px;
+  margin-left: -30px;
+  position: absolute;
+}
+#generateArea {
+  padding: 15px;
+  height: 100px;
+  width: 100%;
+  background-color: #efeeef;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+#numberToGenerate {
+  width: 150px;
+}
+.shape {
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  height: 40px;
+}
+.fieldArea {
+  float: left;
+  width: 250px;
+}
+.smallFieldArea {
+  width: 170px;
+  float: left;
+}
+.shape.over {
+  opacity: 1;
+  -moz-opacity: 1;
+}
+.shape.selected {
+  opacity: 1;
+  -moz-opacity: 1;
+}
+.box-shape {
+  width: 80px;
+  height: 25px;
+  background-color: #b20606;
+}
+.ellipse-shape {
+  width: 80px;
+  height: 25px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  background-color: #b20606;
+}
+.top-space {
+  margin-top: 55px;
+}
+.generate-buttons {
+  padding-top: 15px;
+}
+.smallField input {
+  width: 100px;
+}
+.rentalMapItem {
+  border-collapse: collapse;
+  clear: both;
+  color: #000;
+  display: block;
+  font-family: ProximaNovaRgRegular, Arial, sans-serif;
+  font-size: 13px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+.rentalMapTable .statusBox {
+  width: 124px;
+}
+.popup-content {
+  background-color: transparent;
+}
+.rentalMapItemInfo {
+  clear: both;
+  color: #000;
+  display: block;
+  font-family: ProximaNovaRgRegular, Arial, sans-serif;
+  font-size: 13px;
+  height: 200px;
+  margin: 0;
+  padding: 0 0 0 2px;
+  width: 200px;
+}
+.rentalMapItemInfo .header {
+  margin-left: -2px;
+  width: 100%;
+  border: 1px solid #000;
+  height: 28px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#popup {
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+#popup .close {
+  color: #fff;
+  text-decoration: underline;
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  cursor: pointer;
+}
+#popup .description {
+  width: 180px;
+}
+#popup fieldset legend {
+  font-size: 12px;
+}
+.label {
+  float: left;
+  padding: 5px 2px 0px 2px;
+}
+.page_data.rental_map.builder {
+  width: auto;
+}
+.rental_map .left {
+  float: left;
+}
+.rental_map .left.quarter {
+  width: 25%;
+}
+.rental_map .left.third {
+  width: 33%;
+}
+.rental_map .saved {
+  display: none;
+}
+.editReservable {
+  text-decoration: underline;
+  float: left;
+  cursor: pointer;
+  margin: 4px 5px 2px 3px;
+}
+.copyReservable {
+  bottom: 2px;
+  left: 0px;
+}
+.copyReservable input {
+  width: 16px;
+}
+.copyReservable fieldset {
+  width: 174px;
+}
+.copyReservable .smallButton {
+  float: right;
+}
+.reservableItems td {
+  padding: 0px;
+  width: 200px;
+  height: 40px;
+}
+.reservableItems th {
+  text-align: left;
+  width: 200px;
+}
+.reservableItems .action-cell {
+  width: 270px;
+}
+.reservableItems .action-cell div {
+  float: left;
+}
+.reservableItems .link {
+  text-decoration: underline;
+  color: #00f;
+  cursor: pointer;
+}
+.rentalMapContainer {
+  position: relative;
+}
+.rentalMapContainer img {
+  padding: 5px 0px 5px 0px;
+}
+.rentalMapContainer .nameOverlay {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  opacity: 0.4;
+  width: 630px;
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+  height: 15px;
+}
+.rentalMapContainer .mapName {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  padding: 5px;
+  color: #fff;
+}
+.cornerNumberBox input[type="text"] {
+  width: 20px;
+}
+#SlantPopup {
+  height: 380px;
+}
+#SlantPopup .Horz {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+#SlantPopup .ModalPopupBody {
+  padding: 0px;
+}
+.cornerNumberBox label {
+  display: block;
+  width: 120px;
+}
+.cornerNumberBox.topLeft {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.cornerNumberBox.topRight {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.cornerNumberBox.bottomLeft {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+.cornerNumberBox.bottomRight {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+.padded {
+  margin-top: 35px;
+}
+.btnAdjust {
+  width: 50px;
+}
+.popupCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+#SlantPopup .outerBox {
+  left: 50%;
+  top: 50%;
+}
+#SlantPopup .buttons {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+}
+#SlantPopup .buttons .smallButton {
+  margin-left: 20px;
+}
+.legend {
+  clear: both;
+}
+.legend fieldset {
+  width: 550px;
+}
+.lineheight_40 select {
+  height: 45px;
+}
+.bottomNotification {
+  display: none;
+  height: 87px;
+  bottom: 0;
+  position: fixed;
+  z-index: 50000;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  color: #434242;
+  background: url(/resnexus/img/succ_bg2.png) 0 0 repeat-x;
+  border: 1px solid #000;
+}
+.bottomNotification ul li {
+  line-height: 32px;
+}
+.bottomNotification .field.internalID {
+  width: 50px;
+}
+.bottomNotification #txtSelectedInternalID {
+  width: 45px;
+}
+.bottomNotification #txtSelectedName {
+  width: 180px;
+}
+.bottomNotification #txtSelectedName.error {
+  height: 20px;
+  margin-top: 1px;
+}
+.bottomNotification div.vCenter {
+  padding: 5px 5px;
+  margin-left: 12px;
+}
+.bottomNotification .message {
+  font: bold 14px arial;
+  text-shadow: 0 1px 0 #fff;
+}
+li.offsets {
+  margin-left: 15px;
+}
+.bottomNotification .slider {
+  width: 70px;
+}
+.bottomNotification .bottomSlider {
+  margin-top: 10px;
+}
+.bottomNotification .selectedItemIcon {
+  margin: 30px 0px 0px 15px;
+}
+.bottomNotification .smallButton {
+  margin: 17px 0px 0px 30px;
+}
+#errorNotification {
+  display: none;
+  height: 25px;
+  bottom: 81px;
+  position: fixed;
+  z-index: 50000;
+  width: 739px;
+}
+#statusNotification {
+  display: none;
+  height: 25px;
+  bottom: 81px;
+  position: fixed;
+  z-index: 50000;
+  width: 739px;
+}
+#btnSaveCurrentItem {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  min-width: 80px;
+}
+#selectedNotification {
+  background: #fff;
+}
+#selectedNotification .offsets {
+  margin: 0 6px;
+}
+#selectedNotification .selectedItemIcon {
+  margin-left: 3px;
+}
+#selectedNotification .selectedItemIcon.littleInfoBox {
+  margin-left: 17px;
+}
+#btnClearBorder {
+  line-height: 13px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1px;
+  cursor: pointer;
+}
+.mapThumbnail {
+  max-width: 340px;
+}
+.relative {
+  position: relative;
+}
+.pointer {
+  cursor: pointer;
+}
+.map-item-left {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+.map-item-left-icon {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -9px;
+}
+#addExistingDropDown .error {
+  margin: 10px;
+}
+#dropDownSelectedShape,
+#borderColorPicker {
+  box-sizing: border-box;
+  width: 85px;
+}
