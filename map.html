@@ -28,8 +28,16 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="./raw/coffeegrinder.min.css" />
+
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="./raw/picturefill.min.js" class="picturefill" async="async"></script>
+
 
   <!-- =======================================================
   * Template Name: UpConstruction - v1.2.1
@@ -212,15 +220,85 @@
     </div><!-- End Breadcrumbs -->
 
     <!-- ======= Blog Details Section ======= -->
+    <!-- style="display: flex; justify-content: center; align-items: center; flex-direction: column;" data-aos="fade-up" -->
+
     <section id="blog" class="blog">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos-delay="100">
+
+        <div class="row full-width-row dark-bg">
+          <div class="coffee-span-12" style="display: flex; align-items: center; justify-content: center;">
+            <div class="html-element html-element-1" id="imagemap">
+              <!-- Beginning of Image Map -->
+              <!-- src="./images/map.jpg" -->
+              <img src="./images/map.jpg" usemap="#Living Room Set" border="0" />
+              <map name="Living Room Set">
+
+                <area style="cursor: pointer;" onclick="openModal(0)" alt="Property" title="Property"
+                  coords="132,649,166,683" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(1)" alt="Property" title="Property"
+                  coords="237,462,192,505" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(2)" alt="Property" title="Property"
+                  coords="238,334,210,306" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(3)" alt="Property" title="Property"
+                  coords="250,358,309,406" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(4)" alt="Property" title="Property"
+                  coords="325,347,290,316" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(5)" alt="Property" title="Property"
+                  coords="408,330,471,374" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(6)" alt="Property" title="Property"
+                  coords="478,228,520,273" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(7)" alt="Property" title="Property"
+                  coords="539,328,564,368" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(8)" alt="Property" title="Property"
+                  coords="583,187,624,228" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(9)" alt="Property" title="Property"
+                  coords="706,167,730,207" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(10)" alt="Property" title="Property"
+                  coords="807,131,846,173" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(11)" alt="Property" title="Property"
+                  coords="926,38,991,67" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(12)" alt="Property" title="Property"
+                  coords="927,168,959,200" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(13)" alt="Property" title="Property"
+                  coords="808,238,856,263" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(14)" alt="Property" title="Property"
+                  coords="763,290,787,334" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(15)" alt="Property" title="Property"
+                  coords="682,299,712,343" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(16)" alt="Property" title="Property"
+                  coords="616,311,647,353" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(17)" alt="Property" title="Property"
+                  coords="442,635,475,646" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(18)" alt="Property" title="Property"
+                  coords="432,603,464,619" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(19)" alt="Property" title="Property"
+                  coords="431,568,466,585" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(20)" alt="Property" title="Property"
+                  coords="431,535,466,554" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(21)" alt="Property" title="Property"
+                  coords="422,502,454,520" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(22)" alt="Property" title="Property"
+                  coords="402,476,434,497" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(23)" alt="Property" title="Property"
+                  coords="420,599,390,623" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(24)" alt="Property" title="Property"
+                  coords="402,569,370,593" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(25)" alt="Property" title="Property"
+                  coords="344,535,384,551" shape="rect">
+                <area style="cursor: pointer;" onclick="openModal(26)" alt="Property" title="Property"
+                  coords="339,492,374,513" shape="rect">
+              </map>
+              <!-- End of Image Map -->
+            </div>
+          </div>
+        </div>
 
         <div class="row g-5">
 
           <div class="col-lg-12">
             <div class="mapContainer">
 
-              <div id="mapHandler" style="margin: 4px, 4px;
+              <!-- <div id="mapHandler" style="margin: 4px, 4px;
                 padding: 4px;
                 background-color: white;
                 width: 100%;
@@ -364,48 +442,48 @@
                     style="opacity: 0.7;resize: none;background-color: red;position: static;display: block;height: 40px;width: 14px;">
 
                 </div> -->
-                <div onclick="openModal(22);" class="outerBox liveOuterBox Available" id="testMove22"
-                  data-reservableid="22" style="position: absolute;top: 498px;left: 765px;transform: rotate(65deg);">
-                  <img id="testMoveImage0"
-                    style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 39px;width: 17px;">
-
-                </div>
-                <div onclick="openModal(23);" class="outerBox liveOuterBox Available" id="testMove23"
-                  data-reservableid="23" style="position: absolute;top: 526px;left: 783px;transform: rotate(73deg);">
-                  <img id="testMoveImage0"
-                    style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 46px;width: 15px;">
-
-                </div>
-                <div onclick="openModal(24);" class="outerBox liveOuterBox Available" id="testMove24"
-                  data-reservableid="24" style="position: absolute;top: 471px;left: 724px;transform: rotate(59deg);">
-                  <img id="testMoveImage0"
-                    style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 36px;width: 22px;" />
-
-                </div>
-                <div onclick="openModal(25);" class="outerBox liveOuterBox Available" id="testMove25"
-                  data-reservableid="25" style="position: absolute;top: 559px;left: 787px;transform: rotate(94deg);">
-                  <img id="testMoveImage0"
-                    style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 44px;width: 14px;">
-
-                </div>
-                <div onclick="openModal(26);" class="outerBox liveOuterBox Available" id="testMove26"
-                  data-reservableid="26" style="position: absolute;top: 594px;left: 786px;transform: rotate(93deg);">
-                  <img id="testMoveImage0"
-                    style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 43px;width: 16px;">
-
-                </div>
-                <div onclick="openModal(27);" class="outerBox liveOuterBox Available" id="testMove27"
-                  data-reservableid="27" style="position: absolute;top: 624px;left: 800px;transform: rotate(91deg);">
-                  <img id="testMoveImage0"
-                    style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 43px;width: 15px;">
-
-                </div>
-
-
-
-
+              <!-- <div onclick="openModal(22);" class="outerBox liveOuterBox Available" id="testMove22"
+                data-reservableid="22" style="position: absolute;top: 498px;left: 765px;transform: rotate(65deg);">
+                <img id="testMoveImage0"
+                  style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 39px;width: 17px;">
 
               </div>
+              <div onclick="openModal(23);" class="outerBox liveOuterBox Available" id="testMove23"
+                data-reservableid="23" style="position: absolute;top: 526px;left: 783px;transform: rotate(73deg);">
+                <img id="testMoveImage0"
+                  style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 46px;width: 15px;">
+
+              </div>
+              <div onclick="openModal(24);" class="outerBox liveOuterBox Available" id="testMove24"
+                data-reservableid="24" style="position: absolute;top: 471px;left: 724px;transform: rotate(59deg);">
+                <img id="testMoveImage0"
+                  style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 36px;width: 22px;" />
+
+              </div>
+              <div onclick="openModal(25);" class="outerBox liveOuterBox Available" id="testMove25"
+                data-reservableid="25" style="position: absolute;top: 559px;left: 787px;transform: rotate(94deg);">
+                <img id="testMoveImage0"
+                  style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 44px;width: 14px;">
+
+              </div>
+              <div onclick="openModal(26);" class="outerBox liveOuterBox Available" id="testMove26"
+                data-reservableid="26" style="position: absolute;top: 594px;left: 786px;transform: rotate(93deg);">
+                <img id="testMoveImage0"
+                  style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 43px;width: 16px;">
+
+              </div>
+              <div onclick="openModal(27);" class="outerBox liveOuterBox Available" id="testMove27"
+                data-reservableid="27" style="position: absolute;top: 624px;left: 800px;transform: rotate(91deg);">
+                <img id="testMoveImage0"
+                  style="opacity: 0.7;resize: none;background-color: #35E300;position: static;display: block;height: 43px;width: 15px;">
+
+              </div> -->
+
+
+
+
+
+              <!-- </div> -->
 
               <!-- <button class="zoom-box-control zoom-in" onclick="zoomin()">+</button>
 
@@ -1315,8 +1393,14 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="./raw/jquery.rwdImageMaps.min.js"></script>
 
 
+  <script>
+    $(document).ready(function (e) {
+      $("img[usemap]").rwdImageMaps();
+    });
+  </script>
 
 
   <!-- Template Main JS File -->
